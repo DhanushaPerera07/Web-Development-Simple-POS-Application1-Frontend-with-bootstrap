@@ -1,0 +1,31 @@
+.btn-add {
+  background-color: rgb(85, 123, 228);
+
+  /* transition-duration: 500ms; */
+}
+
+.btn-add:hover {
+  background-color: #3364eb;
+  transition-duration: 1ms;
+}
+
+.btn-add svg {
+  width: 2rem;
+  color: white;
+}
+
+.form-section {
+  box-sizing: border-box;
+  padding: 2% 2%;
+  border: 1px solid lightgray;
+  /* background-color: yellow; */
+}
+
+.field-wrapper {
+  margin-bottom: 1rem;
+}
+
+.btn-form:hover {
+  background-color: #28a745;
+  transition-duration: 500ms;
+}
