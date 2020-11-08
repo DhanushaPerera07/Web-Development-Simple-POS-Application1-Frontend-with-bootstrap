@@ -1,0 +1,19 @@
+.search-box {
+  /* justify-content: space-between; */
+  /* background-color: coral; */
+}
+
+/* .search-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: darkgoldenrod;
+} */
+
+.search {
+  margin: 0 1rem 1rem 0;
+}
+
+/* .search-box:first-child {
+  margin-bottom: 1rem;
+} */

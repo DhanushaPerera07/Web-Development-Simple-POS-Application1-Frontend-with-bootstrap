@@ -49,7 +49,8 @@
   /* border: 1px solid #3364eb; */
   border-radius: 10%;
   /* background-color: #eaf0f7; */
-  box-shadow: 0.1px 0.1px 15px black;
+  -webkit-box-shadow: 3px -5px 22px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 3px -5px 22px -1px rgba(0, 0, 0, 0.45);
 }
 
 .image {
