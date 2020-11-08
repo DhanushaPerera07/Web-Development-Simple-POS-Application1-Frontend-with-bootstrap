@@ -16,8 +16,8 @@
 
 .form-section {
   box-sizing: border-box;
-  padding: 2% 2%;
-  border: 1px solid lightgray;
+  /* padding: 2% 2%; */
+  /* border: 1px solid lightgray; */
   /* background-color: yellow; */
 }
 
@@ -28,4 +28,26 @@
 .btn-form:hover {
   background-color: #28a745;
   transition-duration: 500ms;
+}
+
+.table-section {
+  /* display: flex; */
+  width: 100%;
+  /* border: 5px solid #28a745; */
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .table-section {
+    overflow: scroll;
+    /* border: 5px solid #28a745; */
+  }
+}
+
+.table thead {
+  background-color: #3364eb;
+  color: rgb(255, 255, 255);
+}
+
+.table tbody {
+  font-size: 1rem;
 }
