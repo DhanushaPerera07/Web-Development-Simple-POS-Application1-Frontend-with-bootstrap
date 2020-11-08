@@ -93,68 +93,37 @@
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
                 <button type="button" class="btn-add btn btn-md btn-outline-secondary">
+                  <a href="/pages/customer-form.html">
                   <svg viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
                   </svg>
+                </a>
                 </button>
               </div>
             </div>
           </div>
           <section>
-            <p>Enter customer details here.</p>
+            <p>Customer details are as follows.</p>
           </section>
           <section class="form-section">
-            <div class="container">
-              <form action="" method="post">
-                  <div class="field-wrapper">
-                    <div class="row">
-                      <label for="name">Name</label> 
-                    </div>
-                    <div class="row">
-                      <input name="name" class="name" id="name">
-                    </div>
-                  </div>
-                  <div class="field-wrapper">
-                    <div class="row">
-                      <label for="address">Address</label> 
-                    </div>
-                    <div class="row">
-                      <input name="address" class="address" id="address">
-                    </div>
-                  </div>
-
-                  <div class="field-wrapper">
-                    <div class="row">
-                      <label for="email">Email</label> 
-                    </div>
-                    <div class="row">
-                      <input name="email" class="email" id="email">
-                    </div>
-                  </div>
-
-                  <div class="field-wrapper">
-                    <div class="row">
-                      <label for="contact">Contact</label> 
-                    </div>
-                    <div class="row">
-                      <input name="contact" class="contact" id="contact">
-                    </div>
-                  </div>
-                  <div class="field-wrapper">
-                    <div class="row">
-                      <label for="photo">Photo</label>
-                    </div>
-                    <div class="row">
-                      <input type="file" name="photo" id="photo">
-                    </div>
-                  </div>
-
-                  <div class="field-wrapper">
-                    <div class="row">
-                      <button type="submit" class="btn-form btn btn-primary">Submit</button>
-                    </div>
-                  </div>
-              </form>
+            <div class="container-fluid">
+              <table style="width: 800px;">
+                <tr>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                
+                </tr>
+                <tr>
+                  <td><img src="https://via.placeholder.com/100" alt=""></td>
+                  <td>Sadun Perera</td>
+                  <td>123/A, Temple Road, Kelaniya</td>
+                  <td>sadun@gmail.com</td>
+                  <td>0751234567</td>
+                </tr>
+              </table>
             </div>
           </section>
         </main>

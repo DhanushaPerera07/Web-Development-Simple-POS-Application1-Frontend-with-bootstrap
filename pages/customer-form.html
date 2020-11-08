@@ -13,10 +13,9 @@
       href="/node_modules/bootstrap/dist/css/bootstrap.css"
       rel="stylesheet"
     />
-    
-    <!-- Custom styles for the page -->
-    <link href="/css/dashboard.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/manage-item.css">
+
+    <link rel="stylesheet" href="/css/manage-customer.css">
+
 
     <style>
       .bd-placeholder-img {
@@ -34,7 +33,8 @@
         }
       }
     </style>
-
+    <!-- Custom styles for the page -->
+    <link href="/css/dashboard.css" rel="stylesheet" />
   </head>
   <body>
     <nav
@@ -58,13 +58,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/manage-customer.html">
+                <a class="nav-link active" href="/pages/manage-customer.html">
                   <span data-feather="file"></span>
                   Manage Customer
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/pages/manage-item.html">
+                <a class="nav-link" href="/pages/manage-item.html">
                   <span data-feather="shopping-cart"></span>
                   Manage Item
                 </a>
@@ -89,43 +89,73 @@
           <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
           >
-            <h1 class="h2">Manage Item</h1>
+            <h1 class="h2">Manage Customer</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
                 <button type="button" class="btn-add btn btn-md btn-outline-secondary">
-                  <a href="/pages/item-form.html">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                      <path fill-rule="evenodd" d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"/>
-                    </svg>
-                </a>
+                  <svg viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
                 </button>
-
               </div>
             </div>
           </div>
           <section>
-            <p>Item details are as follows.</p>
-
-            <div class="container-fluid">
-              <table style="width: 800px;">
-                <tr>
-                  <th>Image</th>
-                  <th>Code</th>
-                  <th>Name</th>
-                  <th>Unit Price</th>
-                  <th>Quanity</th>
-                </tr>
-                <tr>
-                  <td><img src="https://via.placeholder.com/100" alt=""></td>
-                  <td>I001</td>
-                  <td>Wireless Keyboard</td>
-                  <td>1500</td>
-                  <td>50</td>
-                </tr>
-              </table>
-            </div>
-
+            <p>Enter customer details below.</p>
+          </section>
+          <section class="form-section">
+            <div class="container">
+                <form action="" method="post">
+                    <div class="field-wrapper">
+                      <div class="row">
+                        <label for="name">Name</label> 
+                      </div>
+                      <div class="row">
+                        <input name="name" class="name" id="name">
+                      </div>
+                    </div>
+                    <div class="field-wrapper">
+                      <div class="row">
+                        <label for="address">Address</label> 
+                      </div>
+                      <div class="row">
+                        <input name="address" class="address" id="address">
+                      </div>
+                    </div>
+  
+                    <div class="field-wrapper">
+                      <div class="row">
+                        <label for="email">Email</label> 
+                      </div>
+                      <div class="row">
+                        <input name="email" class="email" id="email">
+                      </div>
+                    </div>
+  
+                    <div class="field-wrapper">
+                      <div class="row">
+                        <label for="contact">Contact</label> 
+                      </div>
+                      <div class="row">
+                        <input name="contact" class="contact" id="contact">
+                      </div>
+                    </div>
+                    <div class="field-wrapper">
+                      <div class="row">
+                        <label for="photo">Photo</label>
+                      </div>
+                      <div class="row">
+                        <input type="file" name="photo" id="photo">
+                      </div>
+                    </div>
+  
+                    <div class="field-wrapper">
+                      <div class="row">
+                        <button type="submit" class="btn-form btn btn-primary">Submit</button>
+                      </div>
+                    </div>
+                </form>
+              </div>
           </section>
         </main>
       </div>
